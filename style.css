@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(bg.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    backdrop-filter: blur(2px);
+}
+
+.login {
+    width: 300px;
+    height: 320px;
+    background: black;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: content-box;
+    padding: 44px 29px;
+    border-radius: 15px;
+
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 22px;
+}
+
+.login h1 {
+    color: white;
+    background-color: rgb(255, 94, 0);
+    border-radius: 6px;
+    margin: 0;
+    padding: 10px;
+}
+
+.login input {
+    width: 100%;
+    margin-bottom: 18px;
+    border-radius: 4px;
+}
+.login input[type="text"]:hover{
+    border: 1px solid wheat;
+}
+.login input[type="password"]:hover{
+    border: 1px solid wheat;
+}
+h2{
+    color: gray;
+    font-size: 10px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.login input[type="text"],
+input[type="password"] {
+    padding: 5px ;
+    border: none;
+    border-bottom: 1px solid wheat;
+    background: transparent;
+    color: wheat;
+    outline: none;
+    height: 22px;
+    font-size: 16px;
+}
+
+.login input[type="submit"] {
+    border: none;
+    height: 30px;
+    color: white;
+    background: black;
+    font-size: 17px;
+    border-radius: 20px;
+
+}
+
+.login input[type="submit"]:hover {
+    cursor: pointer;
+    background: rgb(255, 94, 0);
+    color: black;
+    font-weight: bold;
+}
+
+.login p {
+    
+    padding: 10px 0;
+    color: white;
+
+}
+
+.login a{
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    font-size: 15px;
+    line-height: 10px;
+    color: rgb(255, 94, 0);
+}
+
+.login a:hover {
+    cursor: pointer;
+    color: white;
+}
+.login h1:hover{
+    background: white;
+    color: rgb(255, 94, 0);
+}
+
+
+
+@media only screen and (max-width:600px){
+    h1{
+        font-size: 35px;
+    }
+    .login p{
+        padding:  20px 0;
+        font-size: 18px;
+    }
+    h2{
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    .login{
+        box-sizing: border-box;
+        width: 300px;
+        height: 450px;
+    }
+
+}
